@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+    Name: Ricardo Morales
+    Date Created: 09/06/2018
+    Most recent revision: 09/06/2018
+-->
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+      <header>
+        <h4 style="font-weight:normal"> Contact Us</h4>
+        <hr style="opacity: 0.25" >
+
+        <h1 align="center">The Classics</h1>
+      </header>
+
+      <nav>
+        <hr style="opacity:.25; border: solid 1.5px">
+        <p>
+          <a href="home.html">Home</a>
+          <a href="menu.html" style="padding-left:1em"> Menu</a>
+          <a href="contact.html" style="padding-left:1em">Contact Us</a>
+        </p>
+        <hr style="border: solid .5px">
+      </nav>
+
+        <section>
+          <form action="submit.html" method="POST">
+          <center>
+            <label for="Name">Name:</label>
+              <input type="text" id="Name" name="Name" style="margin-bottom: 10px">
+              <br />
+
+            <label for="Email">Email:</label>
+              <input type="text" id="Email" name="Email" style="margin-bottom: 10px">
+              <br />
+
+            <label for="Phone">Phone:</label>
+              <input type="text" id="Phone" name="Phone" style="margin-bottom: 10px">
+              <br />
+
+              <label for="inquiry">Reason for Inquiry:</label>
+                <select id="inquiry" name="inquiry" style="margin-bottom: 10px">
+                  <option value="default" selected>Catering</option>
+                  <option value="private-party">Private Party</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select><br />
+
+                <label for="info">Additional Information:  </label>
+                    <textarea id="info" name="info" style="height:50px"
+                    style="margin-bottom: 10px"></textarea>
+              <br />
+
+              <label for="">Have you been to the restaurant?</label>
+              <input type="radio" id="choice1" name="questionnaire" value="no">
+              <label for="choice1">No</label>
+              <input type="radio" id="choice2" name="questionnaire" value="yes">
+              <label for="choice2">Yes</label><br />
+
+              <label for="ContactYou" style="margin-top: 10px">Best days to contact you:</label>
+              <input type="checkbox" id="monday" name="monday" value="monday" style="padding-left:1em">
+                  <label for="monday">M</label>
+              <input type="checkbox" id="tuesday" name="tuesday" value="tuesday" style="padding-left:1em">
+                  <label for="tuesday">T</label>
+              <input type="checkbox" id="wednesday" name="wednesday" value="wednesday" style="padding-left:1em">
+                  <label for="wednesday">W</label>
+              <input type="checkbox" id="thursday" name="thursday" value="thursday" style="padding-left:1em">
+                  <label for="thursday">TH</label>
+              <input type="checkbox" id="friday" name="friday" value="friday" style="padding-left:1em">
+                  <label for="friday">F</label>
+              <br />
+
+              <input type="submit" name="Send" value="Send Request"style="margin-top: 10px">
+
+          </center>
+        </Section>
+
+
+        <footer>
+          <hr style="border: solid .5px">
+          <p align="center" style="text-decoration:none">
+            219 W Ennis Ave, Ennis, TX 75119<br />
+            <br />
+            555-9008
+          </p>
+          <hr style="border: solid .5px">
+        </footer>
+    </body>
+</html
