@@ -1,2 +1,2 @@
 # Dev10
-All projects part of the sofware guild web dev course.
+All projects are part of the sofware guild web dev course.
