@@ -1,0 +1,30 @@
+
+  section {
+    background-color: #000026;
+    color: white;
+
+  }
+
+  header, footer {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: oblique;
+  }
+
+  h1 {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Ultra', serif;
+
+  }
+
+  nav a:visited {
+    color: red;
+  }
+
+  nav a:active {
+    text-decoration:none;
+  }
+
+  nav a:hover {
+    font-weight: bold;
+  }

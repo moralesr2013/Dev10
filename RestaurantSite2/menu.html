@@ -7,14 +7,40 @@
 <html lang="en">
     <head>
         <title>Menu</title>
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Anton|Ultra" rel="stylesheet">
+        <style>
+          table{
+            text-align: center;
+            width:60%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 120%;
+          }
+
+          th{
+            font-size: 130%;
+          }
+
+          tbody tr:nth-child(even) {
+          background-color: white;
+          color: black;
+          }
+
+          tbody tr:nth-child(odd) {
+          background-color: #ff3232;
+          color: black;
+          }
+
+
+        </style>
     </head>
 
     <body>
+      <h4 style="font-weight:normal">Menu</h4>
+      <hr style="opacity: 0.25" >
       <header>
-        <h4 style="font-weight:normal">Menu</h4>
-        <hr style="opacity: 0.25" >
-
-        <h1 align="center">The Classics</h1>
+        <h1>The Classics</h1>
       </header>
 
       <nav>
@@ -29,8 +55,7 @@
 
         <section>
           <article id="menu-items">
-            <center>
-            <table style="text-align:center; width:60%">
+            <table>
               <tr>
                 <th>Burger and Fries</th>
           	    <th>Hot Dog and Chips</th>
@@ -68,7 +93,7 @@
               </tr>
             </table>
 
-            <table style="text-align:center; width:60%">
+            <table>
               <tr>
                 <th>Tenderloin Sandwich and Chips</th>
           	    <th>House Salad</th>
@@ -113,6 +138,29 @@
 
             </table>
 
+            <table>
+              <tr>
+                <th colspan="2">Beverages</th>
+              </tr>
+              <tr>
+                <td>Root Beer</td>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td>Bottled Water</td>
+                <td>$1.25</td>
+              </tr>
+              <tr>
+                <td>Lemonade</td>
+                <td>$1.00</td>
+              </tr>
+              <tr>
+                <td>Iced Tea</td>
+                <td>$1.25</td>
+              </tr>
+            </table>
+
+
           </article>
 
 
@@ -122,7 +170,7 @@
 
         <footer>
           <hr style="border: solid .5px">
-          <p align="center" style="text-decoration:none">
+          <p>
             219 W Ennis Ave, Ennis, TX 75119<br />
             <br />
             555-9008
