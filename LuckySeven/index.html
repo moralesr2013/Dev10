@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <!--
-    Name: Ricardo
+    Name: Ricardo Morales
     Date Created: 9/11/2018
     Most recent revision:
 -->
 <html lang="en">
     <head>
         <title>Lucky Sevens</title>
+        <script type="text/JavaScript" src="functionality.js"></script>
     </head>
 
     <body>
@@ -15,35 +16,46 @@
         </header>
 
         <section>
-          <article id="InitialGame">
-            <form name="LuckySeven" onsubmit="">
-            <div id="StartingBetAmount">
-                <label for="StartingBetAmount">Starting Bet:</label>
-                <input type="number" class="form-control" id="StartingBet">
-            </div>
-            <button type="submit" id="PlaytButton">Play</button>
-
-          </article>
-
-          <article id="ShowResults">
-            <table id=results style="display:none">
-              <thead>
-                <tr>
-                  <th colspan="2">Results</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-                  
+          <form name="LuckySeven" onsubmit="return ValidEntry();">
+          <div id="InputAmount">
+            <label for="StartingBet">Starting Bet:</label>
+            <input type="number" class="form-control" id="StartingBet">
+          </div>
+          <button type="submit" id="PlayButton">Play</button>
+          </form>
 
 
-          </article>
 
+          <table id=results style="display:none">
+            <thead>
+              <tr>
+                <th colspan="2">Results</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td></td>
+                <td><span id=""></span></td>
+              </tr>
+              <tr>
+                <td>Starting Bet</td>
+                <td><span id="StartedBet"></span></td>
+              </tr>
+              <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="NumberRolls"></span></td>
+              </tr>
+              <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="MaxMoney"></span></td>
+              </tr>
+            <tr>
+              <td>Roll Count at Highest Amount Won</td>
+              <td><span id="MaxRolls"></span></td>
+            </tr>
+          </tbody>
+          <table>
 
         </section>
 
