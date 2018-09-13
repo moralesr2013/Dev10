@@ -2,12 +2,52 @@
 <!--
     Name: Ricardo Morales
     Date Created: 9/11/2018
-    Most recent revision:
+    Most recent revision: 9/13/2018
 -->
 <html lang="en">
     <head>
         <title>Lucky Sevens</title>
         <script type="text/JavaScript" src="functionality.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-5cy8WdlNAGqQwyB33aLiqJoRQQxZsc3TDUkSTahHAx2gMK3o0te7Xqm+nNLe4Ou3" crossorigin="anonymous">
+        <style>
+          body{
+            text-align: center;
+          }
+          h1{
+            font-size: 500%;
+          }
+          form{
+            margin-top: 5%;
+          }
+          label{
+            font-size: 150%;
+          }
+          table{
+            text-align: center;
+            width:20%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 120%;
+          }
+          hr{
+            margin-top: 4%;
+            margin-bottom: 2%;
+            width: 50%;
+          }
+          tbody{
+            text-align: left;
+            border-style: solid;
+            border-color: black;
+          }
+          td{
+            border-style: solid;
+            border-width:thin;
+            width:auto;
+          }
+          th{
+            font-size: 200%;
+          }
+        </style>
     </head>
 
     <body>
@@ -16,51 +56,56 @@
         </header>
 
         <section>
-          <form name="LuckySeven" onsubmit="return ValidEntry();">
-          <div id="InputAmount">
-            <label for="StartingBet">Starting Bet:</label>
-            <input type="number" class="form-control" id="StartingBet">
-          </div>
-          <button type="submit" id="PlayButton">Play</button>
-          </form>
+          <center>
+            <form name="LuckySeven" onsubmit="return ValidEntry();">
+            <div id="InputAmount">
+              <label for="StartingBet">Starting Bet:</label>
+              <input type="float" size="5" value="0" id="StartingBet">
+            </div>
+            <button type="submit" id="PlayButton" class="btn btn-outline-secondary">
+              Play
+            </button>
+            </form>
 
+            <article id=ShowResults style="display:none">
+              <hr />
+              <table id=results>
+                <thead>
+                  <tr>
+                    <th colspan="2">Results</th>
+                  </tr>
+                </thead>
 
-
-          <table id=results style="display:none">
-            <thead>
-              <tr>
-                <th colspan="2">Results</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td></td>
-                <td><span id=""></span></td>
-              </tr>
-              <tr>
-                <td>Starting Bet</td>
-                <td><span id="StartedBet"></span></td>
-              </tr>
-              <tr>
-                <td>Total Rolls Before Going Broke</td>
-                <td><span id="NumberRolls"></span></td>
-              </tr>
-              <tr>
-                <td>Highest Amount Won</td>
-                <td><span id="MaxMoney"></span></td>
-              </tr>
-            <tr>
-              <td>Roll Count at Highest Amount Won</td>
-              <td><span id="MaxRolls"></span></td>
-            </tr>
-          </tbody>
-          <table>
-
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><span id=""></span></td>
+                  </tr>
+                  <tr class="table-dark">
+                    <td>Starting Bet</td>
+                    <td><span id="StartedBet"></span></td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="NumberRolls"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Highest Amount Won</td>
+                    <td><span id="MaxMoney"></span></td>
+                  </tr>
+                <tr class="table-primary">
+                  <td>Roll Count at Highest Amount Won</td>
+                  <td><span id="MaxRolls"></span></td>
+                </tr>
+              </tbody>
+              <table>
+            </article>
+          </center>
         </section>
 
-
         <footer>
+          <hr />
+          <p>&copy; 2018 Ricardo Morales. All rights reserved.</p>
 
         </footer>
     </body>

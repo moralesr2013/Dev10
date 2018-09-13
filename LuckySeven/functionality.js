@@ -1,6 +1,6 @@
 /*
 Name: Ricardo Morales
-Date Created: 9/13/2018
+Date Created: 9/11/2018
 Most recent revision: 9/13/2018
 */
 
@@ -67,11 +67,11 @@ function RollDice() {
 function Results(NumberRolls,MaxMoney,MaxRolls,StartedBet){
 
   // sets the folliwng values to there respected id
-  document.getElementById("results").style.display = "block";
+  document.getElementById("ShowResults").style.display = "block";
   document.getElementById("PlayButton").innerText = "Play Again";
-  document.getElementById("StartedBet").innerText =StartedBet;
+  document.getElementById("StartedBet").innerText ="$ "+ StartedBet;
   document.getElementById("NumberRolls").innerText = NumberRolls;
-  document.getElementById("MaxMoney").innerText = MaxMoney;
+  document.getElementById("MaxMoney").innerText = "$ "+ MaxMoney;
   document.getElementById("MaxRolls").innerText = MaxRolls;
 
 }
@@ -108,8 +108,9 @@ function BeginGame(StartingBet){
     if (SumDice == LuckyNumber){
       // if the sum equals the player recieves $4
       GameMoney = GameMoney + 4;
-      //checks if the current money of the user is greater than the last max
-      if (GameMoney>MaxMoney){
+      //checks if the current money of the user is greater than the last max and
+      // greater than started bet
+      if (GameMoney>MaxMoney && GameMoney>StartedBet){
         // make max money equal to game money if statement is true
         MaxMoney = GameMoney;
         // make max rolls equal to current rolls if statement is true
