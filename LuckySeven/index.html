@@ -1,21 +1,55 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--
-    Name: Ricardo 
-    Date Created: 9/11/2018 
+    Name: Ricardo
+    Date Created: 9/11/2018
     Most recent revision:
 -->
-<html lang="en"> 
-    <head> 
-        <title>Page Title</title>	
-    </head> 
-    
+<html lang="en">
+    <head>
+        <title>Lucky Sevens</title>
+    </head>
+
     <body>
         <header>
-            <h1>Main Title</h1>
+            <h1>Lucky Sevens</h1>
         </header>
+
+        <section>
+          <article id="InitialGame">
+            <form name="LuckySeven" onsubmit="">
+            <div id="StartingBetAmount">
+                <label for="StartingBetAmount">Starting Bet:</label>
+                <input type="number" class="form-control" id="StartingBet">
+            </div>
+            <button type="submit" id="PlaytButton">Play</button>
+
+          </article>
+
+          <article id="ShowResults">
+            <table id=results style="display:none">
+              <thead>
+                <tr>
+                  <th colspan="2">Results</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                  
+
+
+          </article>
+
+
+        </section>
+
 
         <footer>
 
         </footer>
-    </body> 
+    </body>
 </html
