@@ -57,7 +57,7 @@
       </nav>
 
         <section>
-          <form action="submit.html" method="POST">
+          <form name="ContactForm" onsubmit="return CheckForm();">
             <label for="Name">Name:</label>
               <input type="text" id="Name" name="Name" style="margin-bottom: 10px">
               <br />
@@ -83,21 +83,21 @@
               <br />
 
               <label for="">Have you been to the restaurant?</label>
-              <input type="radio" id="choice1" name="questionnaire" value="no">
-              <label for="choice1">No</label>
-              <input type="radio" id="choice2" name="questionnaire" value="yes">
+              <input type="radio" id="Visited" name="questionnaire" value="no">
+              <label  for="choice1">No</label>
+              <input type="radio" id="Visited" name="questionnaire" value="yes">
               <label for="choice2">Yes</label><br />
 
               <label for="ContactYou" style="margin-top: 10px">Best days to contact you:</label>
-              <input type="checkbox" id="monday" name="monday" value="monday" style="padding-left:1em">
+              <input type="checkbox" id="day" name="monday" value="monday" style="padding-left:1em">
                   <label for="monday">M</label>
-              <input type="checkbox" id="tuesday" name="tuesday" value="tuesday" style="padding-left:1em">
+              <input type="checkbox" id="day" name="tuesday" value="tuesday" style="padding-left:1em">
                   <label for="tuesday">T</label>
-              <input type="checkbox" id="wednesday" name="wednesday" value="wednesday" style="padding-left:1em">
+              <input type="checkbox" id="day" name="wednesday" value="wednesday" style="padding-left:1em">
                   <label for="wednesday">W</label>
-              <input type="checkbox" id="thursday" name="thursday" value="thursday" style="padding-left:1em">
+              <input type="checkbox" id="day" name="thursday" value="thursday" style="padding-left:1em">
                   <label for="thursday">TH</label>
-              <input type="checkbox" id="friday" name="friday" value="friday" style="padding-left:1em">
+              <input type="checkbox" id="day" name="friday" value="friday" style="padding-left:1em">
                   <label for="friday">F</label>
               <br />
 
@@ -117,5 +117,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/JavaScript" src="scripts/validate.js"></script>
     </body>
 </html
