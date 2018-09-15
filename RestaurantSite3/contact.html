@@ -2,10 +2,11 @@
 <!--
     Name: Ricardo Morales
     Date Created: 09/06/2018
-    Most recent revision: 09/06/2018
+    Most recent revision: 09/15/2018
 -->
 <html lang="en">
     <head>
+      <!--no script is used to display message when the user had JS disabled-->
       <noscript>
         <div style="border: 1px solid Red; padding: 10px; background-color: Red"
         align="center">
@@ -19,11 +20,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Bootstrap CSS -->
+      <!-- Bootstrap CSS and fonts-->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Anton|Ultra" rel="stylesheet">
+      <!--style used for the diffenent forms and text alignment-->
       <style>
       section{
         text-align: center;
@@ -49,6 +51,7 @@
 
       <nav>
         <hr style="opacity:.25; border: solid 1.5px">
+        <!--uses a list to display navigation as tabs-->
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link" href="home.html"><i class="fas fa-home"></i></a>
@@ -65,17 +68,18 @@
       </nav>
 
         <section>
+          <!--form is build for the following fields-->
           <form name="ContactForm" onsubmit="return CheckForm();">
             <label for="Name">Name:</label>
-              <input type="text" id="Name" name="Name" style="margin-bottom: 10px">
+              <input placeholder="Name" type="text" id="Name" name="Name" style="margin-bottom: 10px">
               <br />
 
             <label for="Email">Email:</label>
-              <input type="emial" id="Email" name="Email" style="margin-bottom: 10px">
+              <input placeholder="Email" type="emial" id="Email" name="Email" style="margin-bottom: 10px">
               <br />
 
             <label for="Phone">Phone:</label>
-              <input type="number" id="Phone" name="Phone" style="margin-bottom: 10px">
+              <input placeholder="Phone" type="number" id="Phone" name="Phone" style="margin-bottom: 10px">
               <br />
 
               <label for="inquiry">Reason for Inquiry:</label>
@@ -87,7 +91,7 @@
                 </select><br />
 
                 <label for="info" style="margin-top:auto">Additional Information:  </label>
-                    <textarea id="info" name="info"></textarea>
+                    <textarea placeholder="Additional Information" id="info" name="info"></textarea>
               <br />
 
               <label for="">Have you been to the restaurant?</label>
@@ -115,6 +119,7 @@
 
         <footer>
           <hr style="border: solid .5px">
+          <!-- display the location and number of the restaurant-->
           <p>
             219 W Ennis Ave, Ennis, TX 75119<br />
             <br />
@@ -122,6 +127,7 @@
           </p>
           <hr style="border: solid .5px">
         </footer>
+        <!--scripts needed for bootstrap-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
