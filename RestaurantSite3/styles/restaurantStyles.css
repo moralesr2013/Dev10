@@ -16,6 +16,12 @@
     font-family: 'Ultra', serif;
 
   }
+  h4{
+    font-family: 'Ultra';
+    font-size: 15px;
+    color:#ff3232
+  }
+
 
   nav a:visited {
     color: red;
